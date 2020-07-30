@@ -1,6 +1,0 @@
-#!/bin/bash
-
-./markdown2 -x tables -x fenced-code-blocks,smarty-pants "$@".md > "$@".content.uncorrected.html
-./html_corrector "$@".content.uncorrected.html > "$@".content.html
-./combine "$@".html "$@".content.html
-rm "$@".content.uncorrected.html "$@".content.html
